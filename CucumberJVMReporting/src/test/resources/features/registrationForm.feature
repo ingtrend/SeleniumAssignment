@@ -1,4 +1,4 @@
-	Feature:Registration Form 
+Feature: Registration Form 
  
   Scenario Outline: sign up Registration Form  
   to Complete the Sign up Form
@@ -14,13 +14,13 @@
     And Click on menu drop down
     Then Email id should verified as "<email>"
     And Click on compose option.
-    And I type for send to "sunithssree10"
+    And I type for send to "ingtrend12"
     And I type for Subject "<subject>"
     And I type for Message "<subject>"
 		And click on send message
 		Then acknowledgement message should "<ackMessage>"
 		
  Examples: 
-      | firstName| lastName   | email                     |userName     |password    |confirmPass|subject |ackMessage|
-      | Sunitha1 | Sreeramulu | sunithasreejan6@gmail.com |SunithaSRee60|Axetest@123 |Axetest@123|Hi For testing|The message has been sent to sunitha sreeramulu (sunithssree10)|
+      | firstName | lastName   	| email                     |userName     |password    |confirmPass|subject   |ackMessage|
+      | Aishwarya | AV			| ingtrend12@gmail.com 		|ingtrend12	  |Zaqtest@123 |Zaqtest@123|Hi Testing|The message has been sent to Aishwarya AV (ingtrend12)|
      

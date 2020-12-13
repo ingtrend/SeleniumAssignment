@@ -32,7 +32,7 @@ public class seleniumSteps {
 	@Before
 	public void setUp() {
 		System.setProperty("webdriver.chrome.driver",
-				"C:\\Users\\SunithaS\\Desktop\\SeleniumCucumberSunitha\\chromedriver.exe");
+				"C:\\SDET\\SeleniumCucumber\\chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
@@ -57,7 +57,7 @@ public class seleniumSteps {
 			Date d = new Date();
 			String date = d.toString().replace(":", "_").replace("", "_");
 			File fileTemp = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-			File filePerm = new File("C:\\Users\\SunithaS\\Desktop\\SeleniumCucumberSunitha\\FailedScreenshot"+scenarioName+"_"+date+".png");
+			File filePerm = new File("C:\\SDET\\SeleniumCucumber\\FailedScreenshot"+scenarioName+"_"+date+".png");
 			FileUtils.copyFile(fileTemp, filePerm);
 			
 			
@@ -135,7 +135,7 @@ public class seleniumSteps {
 	@And("^I type for send to \"([^\"]*)\"$")  
     public void sendTo(String email) throws Throwable {  
 	driver.findElement(By.className("select2-search__field")).sendKeys(email);
-	driver.findElement(By.xpath("//li[text()='sunitha sreeramulu (sunithssree10)']")).click();
+	driver.findElement(By.xpath("//li[text()='Aishwarya AV(ingtrend12)']")).click();
     }
 	
 	@And("^I type for Subject \"([^\"]*)\"$")
